@@ -1,0 +1,13 @@
+.homepage {
+    &__title {
+        font-size: 40px;
+        color: #FC5D30;
+        text-transform: uppercase;
+    }
+    &__products-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

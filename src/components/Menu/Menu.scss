@@ -1,0 +1,47 @@
+.menu {
+    &__container {
+        background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+        padding: 5px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    &__logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__logo {
+        font-size: 50px;
+        color: #ffffff;
+    }
+    &__title {
+        font-size: 25px;
+        color: #ffffff;
+        margin-left: 15px;
+    }
+    &__item-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__item {
+        padding: 5px 10px;
+        color: #ffffff;
+        min-width: 50px;
+        list-style-type: none;
+        text-decoration: none;
+        transition: 0.3s all ease-in-out;
+        margin: 0 5px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: #0000007c;
+        }
+    }
+}

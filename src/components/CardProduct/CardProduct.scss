@@ -1,0 +1,94 @@
+.card {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        max-width: 220px;
+    }
+    &__image-box {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        overflow: hidden;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__price-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding: 5px 10px;
+        border-bottom-left-radius: 15px;
+    }
+    &__price {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        &::after{
+            content: '€';
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    &__info-box {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: 5px 0;
+        width: 100%;
+    }
+    &__title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000000;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            color: #FC5D30;
+        }
+    }
+    &__description {
+        font-size: 12px;
+        padding: 0 20px;
+        margin: 10px 0 15px 0;
+    }
+    &__add-cart {
+        width: 100%;
+        background-color: #FC5D30;
+        text-decoration: none;
+        border: none;
+        padding: 15px 0;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            background-color: #c7350d;
+            transform: scale(1.03);
+        }
+    }
+    &__add-cart-fine {
+        font-size: 10px;
+        background-color: #106b2b;
+        cursor:not-allowed ;
+        &:hover {
+            background-color: #106b2b;
+            transform: scale(1);
+        }
+    }
+}
